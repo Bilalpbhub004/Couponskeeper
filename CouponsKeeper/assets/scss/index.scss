@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #ff3100;
+    --primary-hover-color: #c01f00;
+    --secondary-color: rgb(14, 207, 14);
+    --transition: 0.35s;
+}
+
+.link-danger:hover {
+    color: var(--primary-color) !important;
+}
+
+.link-success:hover {
+    color: var(--secondary-color) !important;
+}
+
+.custom-btn-primary {
+    background-color: var(--primary-color);
+    color: rgb(230, 229, 227);
+}
+
+.custom-btn-primary:hover {
+    background-color: var(--primary-hover-color);
+    color: rgb(154, 153, 149);
+}
+
+a {
+    text-decoration: none;
+}
+
+.hover-text {
+    color: var(--primary-color);
+    transition: all var(--transition);
+}
+
+.hover-text i,
+.hover-text span {
+    transition: all var(--transition);
+}
+
+
+.hover-text:hover span,
+.hover-text:hover i {
+    color: var(--primary-color);
+    transform: translateX(10px);
+}
+
+.hover-text:hover .span-box {
+    color: aliceblue;
+    background-color: var(--primary-color);
+}
+
+
+/* Carousel Start */
+
+.main-body {
+    margin: 50px 0;
+    padding: 30px;
+}
+
+.contain {
+    margin: 0 auto;
+
+    width: 100%;
+}
+
+.item {
+    margin: 10px auto;
+    align-items: center;
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Carousel End */
+
+.ribbon {
+    width: 100px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -24px;
+    top: 10px;
+    text-align: center;
+    transform: rotate(45deg);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.blog-section {
+
+    .date-section {
+
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+// Rating Css Start
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.rating input:checked~label,
+.rating label:hover,
+.rating label:hover~label {
+    color: #ffcc00;
+}
+
+// Rating Css End
+
+.coupon-container {
+    background-color: var(--bs-body-tertiary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.coupon-image img {
+    width: 75%;
+
+}
+
+.coupon-expiration {
+    font-size: 0.875rem;
+}
+
+.coupon-button a {
+    font-size: 1.10rem;
+}
+
+.search_response-output {
+    max-height: 330px;
+
+}
+
+.cookie-alert {
+    opacity: 0;
+    width: 300px;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+}
+
+.cookie-alert.show_cookie {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.footer-section {
+
+    .links-section {
+
+        i {
+
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 912px) {
+    .coupon-image img {
+
+        width: 100%;
+    }
+
+    .coupon-expiration {
+        font-size: 0.7rem;
+    }
+
+    .coupon-button a {
+        font-size: 0.9rem;
+    }
+}
